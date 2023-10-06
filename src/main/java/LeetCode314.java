@@ -36,7 +36,7 @@ public class LeetCode314 {
         }
 
         Map<Integer, List<Integer>> columns = new HashMap<>();
-        Queue<NodeWithLevel> queue = new ArrayDeque<>();
+        Queue<NodeWithLevel> queue = new LinkedList<>();
         queue.add(new NodeWithLevel(root, 0));
         int minLevel = Integer.MAX_VALUE;
         int maxLevel = Integer.MIN_VALUE;
